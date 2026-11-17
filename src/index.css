@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-dark: #0d0e6d;
+  --color-brand-accent: #a6e77c;
+  --color-brand-light-accent: #c5f2a4;
+  --color-scholar-dark: #121238;
+  --color-scholar-sidebar: #18184a;
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.animate-float { animation: float 4s ease-in-out infinite; }
+
+@media print {
+  .no-print, aside#sidebar, header { display: none !important; }
+  main { overflow: visible !important; }
+}
+
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
